@@ -1,0 +1,21 @@
+<svg width="156" height="323" viewBox="0 0 156 323" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_i_4_11)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M105.324 161L126.381 0L0 161.5H50.6756L29.619 322.5L156 161H105.324Z" fill="url(#paint0_diamond_4_11)"/>
+</g>
+<defs>
+<filter id="filter0_i_4_11" x="0" y="-6" width="156" height="328.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="-6"/>
+<feGaussianBlur stdDeviation="6.5"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="shape" result="effect1_innerShadow_4_11"/>
+</filter>
+<radialGradient id="paint0_diamond_4_11" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(85 161) rotate(103.834) scale(514.421 387.197)">
+<stop stop-color="#FAFF0C"/>
+<stop offset="0.93981" stop-color="#393924" stop-opacity="0"/>
+</radialGradient>
+</defs>
+</svg>

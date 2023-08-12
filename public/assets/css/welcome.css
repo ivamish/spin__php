@@ -1,0 +1,255 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+:root {
+  --max-width-container: 1200px;
+}
+@media (max-width: 1400px) {
+  :root {
+    --max-width-container: 1140px;
+  }
+}
+@media (max-width: 1200px) {
+  :root {
+    --max-width-container: 970px;
+  }
+}
+@media (max-width: 992px) {
+  :root {
+    --max-width-container: 750px;
+  }
+}
+@media (max-width: 767px) {
+  :root {
+    --max-width-container: none;
+  }
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.rotate {
+  -webkit-animation: rotate 0.5s linear;
+          animation: rotate 0.5s linear;
+  -webkit-animation-iteration-count: 6;
+          animation-iteration-count: 6;
+}
+
+@-webkit-keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.rotate {
+  -webkit-animation: rotate 0.5s linear;
+          animation: rotate 0.5s linear;
+  -webkit-animation-iteration-count: 6;
+          animation-iteration-count: 6;
+}
+
+.show {
+  display: flex;
+  -webkit-animation: show 1s linear;
+          animation: show 1s linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.welcome {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.welcome__title {
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  font-size: 28px;
+  letter-spacing: -0.06rem;
+}
+.welcome__btns {
+  margin-top: 66px;
+}
+.welcome__btn {
+  margin-bottom: 31px;
+}
+
+.welcome-btn {
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: #fff;
+  padding: 16px 30px;
+  background-color: #575DFB;
+  border-radius: 100px;
+  min-width: 379px;
+  text-align: center;
+  display: block;
+  border: none;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.welcome-btn:hover {
+  background-color: #272ee7;
+}
+.welcome-btn--transparent {
+  border: 1px solid #333;
+  color: #333;
+  background-color: transparent;
+}
+.welcome-btn--transparent:hover {
+  background-color: #272ee7;
+  color: #fff;
+  border: none;
+}
+
+.welcome-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.welcome-form__field {
+  position: relative;
+}
+.welcome-form__field-control {
+  position: absolute;
+  top: 35%;
+  right: 30px;
+}
+.welcome-form__field-control.true .welcome-form__field-check {
+  opacity: 1;
+}
+.welcome-form__field-control.true .welcome-form__field-x {
+  opacity: 0;
+}
+.welcome-form__field-control.false .welcome-form__field-check {
+  opacity: 0;
+}
+.welcome-form__field-control.false .welcome-form__field-x {
+  opacity: 1;
+}
+.welcome-form__field-check, .welcome-form__field-x {
+  position: absolute;
+  transition: all 0.5s;
+  opacity: 0;
+}
+.welcome-form__field-eye {
+  width: 25px;
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.welcome-form__field-eye img {
+  width: 100%;
+}
+.welcome-form__field-eye::after {
+  content: "";
+  display: block;
+  height: 25px;
+  width: 1px;
+  background-color: #3f3f3f;
+  position: absolute;
+  top: -24%;
+  right: 49%;
+  transform: rotate(45deg);
+  opacity: 1;
+  transition: all 0.5s;
+}
+.welcome-form__field-eye.active::after {
+  opacity: 0;
+}
+.welcome-form__input {
+  border: none;
+  min-width: 368px;
+  min-height: 60px;
+  background: rgba(0, 0, 0, 0.03);
+  margin-bottom: 2px;
+  padding: 16px 20px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  outline: none;
+}
+.welcome-form__input--first {
+  border-radius: 15px 15px 0px 0px;
+}
+.welcome-form__input--end {
+  border-radius: 0px 0px 15px 15px;
+}
+.welcome-form__btn {
+  margin-top: 16px;
+}
+.welcome-form__epilog {
+  font-family: "Poppins", sans-serif;
+  margin-top: 262px;
+  font-size: 16px;
+}
+.welcome-form__epilog a {
+  font-weight: 700;
+  text-decoration: none;
+  color: #333;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: var(--max-width-container);
+  min-height: inherit;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    padding: 0 35px;
+  }
+}
+@media (max-width: 582px) {
+  .container {
+    padding: 0 15px;
+  }
+}
