@@ -4826,7 +4826,6 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 function getItem() {
   return _getItem.apply(this, arguments);
 }
-
 function _getItem() {
   _getItem = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
     var response;
@@ -4835,7 +4834,7 @@ function _getItem() {
         switch (_context.prev = _context.next) {
           case 0:
             _context.next = 2;
-            return fetch('http://spin/spin');
+            return fetch(`http://${document.domain}/spin`);
 
           case 2:
             response = _context.sent;
